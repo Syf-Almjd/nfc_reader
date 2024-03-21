@@ -27,11 +27,15 @@ class MyHomePage extends StatelessWidget {
         title: const Text('NFC Reader'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            _startNFCReading(context);
-          },
-          child: const Text('Start NFC Reading'),
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                _startNFCReading(context);
+              },
+              child: const Text('Check In'),
+            ),
+          ],
         ),
       ),
     );
